@@ -52,8 +52,16 @@
       endpoints that are important here:
     </p>
     <ul>
-      <li>https://node-hnapi.herokuapp.com/news?page=number</li>
-      <li>http://node-hnapi.herokuapp.com/item/$id</li>
+      <li>
+        <a target="_blank" href="https://node-hnapi.herokuapp.com/news?page=1">
+          https://node-hnapi.herokuapp.com/news?page=1
+        </a>
+      </li>
+      <li>
+        <a target="_blank" href="http://node-hnapi.herokuapp.com/item/21741504">
+          http://node-hnapi.herokuapp.com/item/21741504
+        </a>
+      </li>
     </ul>
     <p>Here are some resources to help you:</p>
     <ul>
@@ -100,11 +108,22 @@
     <ol>
       <li>Inside the source folder, create a components folder.</li>
       <li>
-        Create a file called Navigation.svelte file and import it into the
-        App.svelte file.
+        Create a file called
+        <b>Navigation.svelte</b>
+        file and import it into the
+        <b>App.svelte</b>
+        file.
       </li>
-      <li>Add a link to "/" and some styling.</li>
-      <li>Add it to the App.svelte file.</li>
+      <li>
+        Add a link to
+        <b>"/"</b>
+        and some styling.
+      </li>
+      <li>
+        Add it to the
+        <b>App.svelte</b>
+        file.
+      </li>
     </ol>
     <h2>4. Let's add a router!</h2>
     <p>
@@ -116,15 +135,32 @@
       . You can find examples and usage instructions in the git repository.
     </p>
     <ol>
-      <li>Add the package to the App.svelte.</li>
-      <li>Create a folder called "pages" in the "src" directory.</li>
       <li>
-        Create two files called Home.svelte and SingleItem.svelte. (These will
-        be our pages, if it was not already clear.)
+        Add the package to the
+        <b>App.svelte</b>
+        .
+      </li>
+      <li>
+        Create a folder called
+        <b>pages</b>
+        in the
+        <b>src</b>
+        directory.
+      </li>
+      <li>
+        Create two files called
+        <b>Home.svelte</b>
+        and
+        <b>SingleItem.svelte</b>
+        . (These will be our pages, if it was not already clear.)
       </li>
       <li>
         Wire everything together so that we have two routes. The paths on each
-        route should be "/" and "/item/:id".
+        route should be
+        <b>"/"</b>
+        and
+        <b>"/item/:id"</b>
+        .
       </li>
     </ol>
     <h2>4. Building the Home page!</h2>
@@ -133,8 +169,11 @@
       This is where we'll use the first of the two end-points. Using the
       built-in browser fetch API is probably the easiest. The result contains an
       array of stories. To start with we can just log these out. To dump the
-      data an easy method is to just use a "pre" tag combined with a
-      "JSON.stringify(data, undefined, 2)";.
+      data an easy method is to just use a
+      <b>pre</b>
+      tag combined with a
+      <b>JSON.stringify(data, null, 2)</b>
+      .
     </p>
     <p>
       You have some options here. Ideally we want to show some kind of loading
@@ -147,9 +186,14 @@
       Create a Headline component that we can use to display each item in the
       results array from the last chapter. The result object contains a number
       of properties that you will have to pass on to the component. The
-      important ones are: url, title, id and comments_count. Don't forget to use
-      the "Link" component from the 'svelte-routing' library. This will be
-      needed to pass on the id to the SingleItem page.
+      important ones are:
+      <b>url, title, id, comments_count</b>
+      . Don't forget to use the
+      <b>Link</b>
+      component from the 'svelte-routing' library. This will be needed to pass
+      on the id to the
+      <b>SingleItem</b>
+      page.
     </p>
     <p>
       In the Home.svelte file where we have all the data. Use an #each to loop
@@ -157,14 +201,17 @@
     </p>
     <h2>7. Wow! We're halfway there! I think?</h2>
     <p>
-      Let's now build the SingleItem page! For now, let's, like before, just
-      fetch the data and dump it on the page. This is where we'll use the second
-      endpoint.
+      Let's now build the
+      <b>SingleItem</b>
+      page! For now, let's, like before, just fetch the data and dump it on the
+      page. This is where we'll use the second endpoint.
     </p>
     <p>
-      Use a "pre" tag and dump it on the using the JSON.stringify method we used
-      above. That's a lot of comments!? Study the contents of this and try to
-      figure out the structure.
+      Use a
+      <b>pre</b>
+      tag and dump it on the using the JSON.stringify method we used above.
+      That's a lot of comments!? Study the contents of this and try to figure
+      out the structure.
     </p>
     <h2>8. Let's build a comment component.</h2>
     <p>
