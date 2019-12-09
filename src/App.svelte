@@ -73,6 +73,10 @@
         </a>
       </li>
     </ul>
+    <p>
+      If you want to, you can add styling to your code. In Svelte it's very
+      simple to do. Just create a style tag and add your css. Easy-peasy!
+    </p>
     <h2>1. Clone the project</h2>
     <p>
       To get start, visit the
