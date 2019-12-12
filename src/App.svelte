@@ -163,7 +163,7 @@
         .
       </li>
     </ol>
-    <h2>4. Building the Home page!</h2>
+    <h2>5. Building the Home page!</h2>
     <p>
       We'll now start building the home page. Here we will start fetching data.
       This is where we'll use the first of the two end-points. Using the
